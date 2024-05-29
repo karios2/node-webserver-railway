@@ -37,6 +37,15 @@ app.get('/generic', (req, res) => {
   });
 });
 
+//Ruta para salida
+app.get('/salidas', (req, res) => {
+  res.render('salidas', {
+    nombre: 'Armando David Espinoza',
+    titulo: 'Curso de Node'
+  })
+});
+
+
 // Otras rutas
 app.get('/hola-mundo', (req, res) => {
   res.send('Hola Mundo en su respectiva ruta');
